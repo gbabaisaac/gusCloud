@@ -15,6 +15,8 @@ The prototype asks a simple question:
 > We are spending millions on AI tools and agents—but what measurable value are
 > we actually getting?
 
+**[Open the live demo](https://gbabaisaac.github.io/heyGus/)**
+
 ![Gus dashboard](docs/gus-dashboard.svg)
 
 ## What the demo shows
