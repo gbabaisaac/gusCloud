@@ -1,6 +1,11 @@
-# Gus — AI Workforce & Engineering Observability
+# Gus Cloud — Datadog for AI-Powered Engineering
 
-> Datadog for AI agents, engineering intelligence, and organizational impact.
+> Observe how engineers and AI agents work together—from prompt to production.
+
+Traditional observability explains what software is doing. Gus Cloud explains
+how software work gets done: which AI context was used, what an agent changed,
+where a human intervened, how the change moved through review and deployment,
+and whether it produced a measurable engineering outcome.
 
 Gus helps engineering organizations understand what their AI investment actually
 produces. It connects AI sessions and context to code changes, human decisions,
@@ -15,7 +20,24 @@ The prototype asks a simple question:
 > We are spending millions on AI tools and agents—but what measurable value are
 > we actually getting?
 
-**[Open the live demo](https://gbabaisaac.github.io/heyGus/)**
+**[Open the live demo](https://gbabaisaac.github.io/gusCloud/)**
+
+## Why “Datadog for engineers”?
+
+Datadog connects infrastructure signals into one operational picture. Gus Cloud
+does the same for AI-powered engineering work:
+
+| Observability question | Gus Cloud evidence |
+| --- | --- |
+| What happened? | Prompts, context versions, agent actions, code diffs, PRs, and deployments |
+| Who or what contributed? | Human edits, AI generation, reviews, architecture, and manager enablement |
+| What did it cost? | Model, tokens, session cost, retries, and engineering time |
+| Did it work? | Accepted changes, rework, incidents, quality, latency, and business outcomes |
+| Can we prove it? | Linked evidence with confidence levels and correlation/causation boundaries |
+
+Gus Cloud is not employee surveillance and does not calculate intrinsic human
+worth. Its impact signals are explainable lenses for investigation, coaching,
+and organizational learning—not automated personnel recommendations.
 
 ![Gus dashboard](docs/gus-dashboard.svg)
 
@@ -27,6 +49,8 @@ The prototype asks a simple question:
   retries, and engineering outcomes.
 - **AI-to-impact trace:** follow one AI request through a human correction,
   pull request, deployment, and observed performance improvement.
+- **Code evolution diffs:** compare AI-generated code with human corrections,
+  understand why it changed, and link the exact diff to downstream evidence.
 - **Engineering impact profiles:** explain delivery, quality, architecture,
   collaboration, and AI leverage without reducing people to output rankings.
 - **Workforce intelligence:** explore all 50 simulated engineers, managers,
@@ -47,8 +71,8 @@ personnel actions.
 No package installation or API keys are required.
 
 ```sh
-git clone https://github.com/gbabaisaac/heyGus.git
-cd heyGus/web
+git clone https://github.com/gbabaisaac/gusCloud.git
+cd gusCloud/web
 python3 -m http.server 4173
 ```
 
@@ -63,8 +87,8 @@ Open [http://127.0.0.1:4173](http://127.0.0.1:4173).
    to show cost, tokens, files, retries, the execution timeline, and prompt
    access controls.
 3. **Open Impact trace.** Click each stage from AI session to production outcome.
-   Emphasize the human correction and the difference between supported
-   correlation and proven causation.
+   Open the AI → human diff, emphasize the query correction, and explain the
+   difference between supported correlation and proven causation.
 4. **Open Workforce intelligence.** Filter the complete team, change the impact
    dimension, and open a person or manager to inspect prompts, sessions, PRs,
    reviews, quality, and value evidence.
