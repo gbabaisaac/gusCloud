@@ -1,0 +1,4 @@
+/build/
+.omx/
+.DS_Store
+*.plist
