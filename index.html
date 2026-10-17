@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gus AI workforce and engineering observability demo" />
+  <title>Gus — AI Engineering Intelligence</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand"><span class="brand-mark">G</span><span>gus</span><span class="brand-badge">BETA</span></div>
+      <div class="org-switcher"><span class="org-logo">A</span><div><strong>Acme Cloud</strong><small>Enterprise workspace</small></div><span class="chevron">⌄</span></div>
+      <nav id="main-nav">
+        <p class="nav-label">Intelligence</p>
+        <button class="nav-item active" data-view="overview"><span>⌂</span>Overview</button>
+        <button class="nav-item" data-view="trace"><span>⌁</span>Impact trace <em>Signature</em></button>
+        <button class="nav-item" data-view="sessions"><span>⌘</span>AI sessions <b>2.4k</b></button>
+        <p class="nav-label">Organization</p>
+        <button class="nav-item" data-view="people"><span>♙</span>People</button>
+        <button class="nav-item" data-view="workforce"><span>▦</span>Workforce intelligence <em>New</em></button>
+        <button class="nav-item" data-view="organization"><span>⌗</span>Teams & org</button>
+        <button class="nav-item" data-view="quality"><span>◇</span>Quality & debt <i>3</i></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="nav-item"><span>◉</span>Integrations <b>12</b></button>
+        <button class="nav-item"><span>⚙</span>Settings</button>
+        <div class="user-card"><span class="avatar avatar-purple">IL</span><div><strong>Isabel Lee</strong><small>VP Engineering</small></div><span>•••</span></div>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="mobile-menu" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumbs"><span>Acme Cloud</span><b>/</b><strong id="breadcrumb">Overview</strong></div>
+        <div class="top-actions"><span class="persistent-demo">SIMULATED</span><span class="live-dot"></span><span class="live-text">Live ingestion</span><button class="icon-btn" id="theme-toggle" aria-label="Switch to light mode" title="Switch theme">☼</button><button class="icon-btn" aria-label="Search">⌕</button><button class="icon-btn" aria-label="Notifications">♢<i></i></button></div>
+      </header>
+
+      <section class="content">
+        <div class="demo-banner"><span>SIMULATED DATA</span><p>This demo uses fictional people, teams, and outcomes. Metrics are illustrative.</p><button id="dismiss-banner" aria-label="Dismiss">×</button></div>
+
+        <div class="page active" id="overview-view">
+          <div class="page-head"><div><p class="eyebrow">AI WORKFORCE INTELLIGENCE</p><h1>Good morning, Isabel.</h1><p>Here’s how AI is translating into engineering outcomes.</p></div><div class="filters"><span class="filter-label">KPI scope</span><button class="filter" id="team-filter">All teams <span>⌄</span></button><button class="filter" id="date-filter">Last 30 days <span>⌄</span></button></div></div>
+
+          <div class="metric-grid">
+            <article class="metric"><div class="metric-top"><span>AI spend</span><i class="up">↗ 8.2%</i></div><strong id="metric-spend">$184,620</strong><small id="metric-budget">of $220k monthly budget</small><div class="progress"><span id="budget-progress" style="width:84%"></span></div></article>
+            <article class="metric"><div class="metric-top"><span>Hours returned</span><i class="up">↗ 14.6%</i></div><strong id="metric-hours">3,842 <sup>hrs</sup></strong><small>Model-estimated · 72% confidence</small><div class="spark purple">▁▂▂▃▅▄▆▇</div></article>
+            <article class="metric"><div class="metric-top"><span>AI-assisted PRs</span><i class="up">↗ 11.3%</i></div><strong id="metric-prs">1,284</strong><small>68% merged without rework</small><div class="spark teal">▁▁▃▂▄▅▅▇</div></article>
+            <article class="metric"><div class="metric-top"><span>Estimated ROI</span><i class="up">↗ 0.4×</i></div><strong id="metric-roi">3.7×</strong><small id="metric-value">$683k modeled value created</small><div class="spark amber">▂▂▃▃▄▆▅▇</div></article>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="panel span-2 outcome-panel">
+              <div class="panel-head"><div><h2>AI investment → engineering outcomes</h2><p>All teams · six-month normalized comparison</p></div><div class="legend"><span><i class="dot purple-bg"></i>AI spend</span><span><i class="dot green-bg"></i>Outcome value</span></div></div>
+              <div class="chart-wrap"><div class="y-axis"><span>$800k</span><span>$600k</span><span>$400k</span><span>$200k</span><span>$0</span></div><svg class="line-chart" viewBox="0 0 800 240" role="img" aria-label="AI spend and measured value over six months"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22c98b" stop-opacity=".22"/><stop offset="1" stop-color="#22c98b" stop-opacity="0"/></linearGradient></defs><g class="grid-lines"><line x1="0" y1="20" x2="800" y2="20"/><line x1="0" y1="70" x2="800" y2="70"/><line x1="0" y1="120" x2="800" y2="120"/><line x1="0" y1="170" x2="800" y2="170"/><line x1="0" y1="220" x2="800" y2="220"/></g><path class="area" d="M10 196 C95 186 105 166 170 162 S265 134 330 139 S440 100 490 112 S580 79 650 70 S730 42 790 35 L790 220 L10 220Z"/><path class="value-line" d="M10 196 C95 186 105 166 170 162 S265 134 330 139 S440 100 490 112 S580 79 650 70 S730 42 790 35"/><path class="spend-line" d="M10 188 C100 181 112 179 170 176 S270 159 330 160 S425 148 490 145 S580 128 650 126 S735 112 790 110"/><g class="points"><circle cx="790" cy="35" r="5" class="value-point"/><circle cx="790" cy="110" r="5" class="spend-point"/></g></svg><div class="x-axis"><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div></div>
+              <div class="chart-summary"><div><span>Measured outcome value</span><strong>$683k</strong></div><div><span>AI investment</span><strong>$185k</strong></div><div><span>Value gap</span><strong class="green">+$498k</strong></div><button class="text-btn" data-nav="trace">Explore attribution →</button></div>
+            </article>
+
+            <article class="panel signals"><div class="panel-head"><div><h2>Signals requiring attention</h2><p>Prioritized by estimated impact</p></div><span class="count-badge">3</span></div>
+              <button class="signal danger" data-nav="sessions"><span class="signal-icon">!</span><div><strong>High-cost, low-output sessions</strong><p>12 sessions consumed $4,820 with no accepted changes.</p><small>Potential waste · $4.8k</small></div><b>›</b></button>
+              <button class="signal warning" data-nav="quality"><span class="signal-icon">↻</span><div><strong>Repeated auth implementation errors</strong><p>Claude Sonnet repeated the same JWT pattern across 3 teams.</p><small>Quality risk · 18 PRs</small></div><b>›</b></button>
+              <button class="signal info" data-nav="organization"><span class="signal-icon">⌁</span><div><strong>Platform team dependency load</strong><p>31% of delivery delays involve Platform review queues.</p><small>Bottleneck · 46 hrs</small></div><b>›</b></button>
+            </article>
+
+            <article class="panel span-2"><div class="panel-head"><div><h2>Team efficiency</h2><p>AI investment relative to accepted engineering outcomes</p></div><button class="text-btn" data-nav="organization">View organization →</button></div>
+              <div class="team-table"><div class="table-row table-header"><span>Team</span><span>AI spend</span><span>Accepted PRs</span><span>Rework</span><span>Value / $1</span><span>Trend</span></div><div class="table-row"><span><i class="team-dot indigo"></i><b>Payments</b><small>12 engineers</small></span><span>$46.2k</span><span>284</span><span class="green">12%</span><span><b>5.2×</b></span><span class="trend up">↗ 18%</span></div><div class="table-row"><span><i class="team-dot teal"></i><b>Core Platform</b><small>14 engineers</small></span><span>$61.8k</span><span>312</span><span>21%</span><span><b>3.9×</b></span><span class="trend up">↗ 7%</span></div><div class="table-row"><span><i class="team-dot amber"></i><b>Developer Experience</b><small>11 engineers</small></span><span>$31.4k</span><span>196</span><span class="green">9%</span><span><b>4.6×</b></span><span class="trend up">↗ 12%</span></div><div class="table-row flagged"><span><i class="team-dot rose"></i><b>Growth</b><small>13 engineers</small></span><span>$45.2k</span><span>147</span><span class="red">38%</span><span><b>1.4×</b></span><span class="trend down">↘ 9%</span></div></div>
+            </article>
+            <article class="panel model-mix"><div class="panel-head"><div><h2>Model mix</h2><p>By total token spend</p></div></div><div class="donut-row"><div class="donut"><div><strong>8.4B</strong><span>tokens</span></div></div><div class="donut-legend"><span><i class="indigo-bg"></i>Claude Sonnet <b>42%</b></span><span><i class="purple-bg"></i>GPT-5 Codex <b>31%</b></span><span><i class="teal-bg"></i>Gemini 2.5 Pro <b>18%</b></span><span><i class="amber-bg"></i>Other <b>9%</b></span></div></div></article>
+          </div>
+        </div>
+
+        <div class="page" id="trace-view"></div>
+        <div class="page" id="sessions-view"></div>
+        <div class="page" id="people-view"></div>
+        <div class="page" id="workforce-view"></div>
+        <div class="page" id="organization-view"></div>
+        <div class="page" id="quality-view"></div>
+      </section>
+    </main>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div><aside class="session-drawer" id="session-drawer" role="dialog" aria-modal="true" aria-label="AI session detail" aria-hidden="true" inert></aside>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
