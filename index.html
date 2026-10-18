@@ -19,13 +19,13 @@
         <button class="nav-item" data-view="sessions"><span>⌘</span>AI sessions <b>2.4k</b></button>
         <p class="nav-label">Organization</p>
         <button class="nav-item" data-view="people"><span>♙</span>People</button>
-        <button class="nav-item" data-view="workforce"><span>▦</span>Workforce intelligence <em>New</em></button>
+        <button class="nav-item" data-view="workforce"><span>▦</span>Workforce intelligence</button>
         <button class="nav-item" data-view="organization"><span>⌗</span>Teams & org</button>
         <button class="nav-item" data-view="quality"><span>◇</span>Quality & debt <i>3</i></button>
       </nav>
       <div class="sidebar-bottom">
-        <button class="nav-item"><span>◉</span>Integrations <b>12</b></button>
-        <button class="nav-item"><span>⚙</span>Settings</button>
+        <button class="nav-item" data-view="integrations"><span>◉</span>Integrations <b>12</b></button>
+        <button class="nav-item" data-view="settings"><span>⚙</span>Settings</button>
         <div class="user-card"><span class="avatar avatar-purple">IL</span><div><strong>Isabel Lee</strong><small>VP Engineering</small></div><span>•••</span></div>
       </div>
     </aside>
@@ -34,7 +34,7 @@
       <header class="topbar">
         <button class="mobile-menu" aria-label="Toggle navigation">☰</button>
         <div class="breadcrumbs"><span>Acme Cloud</span><b>/</b><strong id="breadcrumb">Overview</strong></div>
-        <div class="top-actions"><span class="persistent-demo">SIMULATED</span><span class="live-dot"></span><span class="live-text">Live ingestion</span><button class="icon-btn" id="theme-toggle" aria-label="Switch to light mode" title="Switch theme">☼</button><button class="icon-btn" aria-label="Search">⌕</button><button class="icon-btn" aria-label="Notifications">♢<i></i></button></div>
+        <div class="top-actions"><span class="persistent-demo">SIMULATED</span><span class="live-dot"></span><span class="live-text">Live ingestion</span><button class="icon-btn" id="theme-toggle" aria-label="Switch to light mode" title="Switch theme">☼</button><button class="icon-btn" id="global-search" aria-label="Search">⌕</button><button class="icon-btn" id="notifications" aria-label="Notifications">♢<i></i></button></div>
       </header>
 
       <section class="content">
@@ -76,6 +76,8 @@
         <div class="page" id="workforce-view"></div>
         <div class="page" id="organization-view"></div>
         <div class="page" id="quality-view"></div>
+        <div class="page" id="integrations-view"></div>
+        <div class="page" id="settings-view"></div>
       </section>
     </main>
   </div>
